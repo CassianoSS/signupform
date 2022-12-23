@@ -46,7 +46,7 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                <aboutuspath cq-msm-lockable="./aboutuspath"
                             fieldDescription="Path to the about us page"
-                            fieldLabel="Path About Us"
+                            fieldLabel="Path"
                             jcr:primaryType="nt:unstructured"
                             name="./aboutuspath"
                             sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
@@ -58,7 +58,7 @@
                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                <productspath cq-msm-lockable="./productspath"
                              fieldDescription="Path to the products page"
-                             fieldLabel="Path Products"
+                             fieldLabel="Path"
                              jcr:primaryType="nt:unstructured"
                              name="./productspath"
                              sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
@@ -70,7 +70,7 @@
                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                <storepath cq-msm-lockable="./storepath"
                           fieldDescription="Path to the store page"
-                          fieldLabel="Path Store"
+                          fieldLabel="Path"
                           jcr:primaryType="nt:unstructured"
                           name="./storepath"
                           sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
@@ -82,7 +82,7 @@
                      sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                <helppath cq-msm-lockable="./helppath"
                          fieldDescription="Path to the help page"
-                         fieldLabel="Path Help"
+                         fieldLabel="Path"
                          jcr:primaryType="nt:unstructured"
                          name="./helppath"
                          sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
@@ -98,10 +98,15 @@
                          name="./cartpath"
                          sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
                <search cq-msm-lockable="./search"
-                       fieldLabel="Search"
+                       fieldLabel="search"
                        jcr:primaryType="nt:unstructured"
                        name="./search"
                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+               <hamburger cq-msm-lockable="./hamburger"
+                          fieldLabel="Hamburger Icon"
+                          jcr:primaryType="nt:unstructured"
+                          name="./hamburger"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
             </items>
          </column>
       </items>

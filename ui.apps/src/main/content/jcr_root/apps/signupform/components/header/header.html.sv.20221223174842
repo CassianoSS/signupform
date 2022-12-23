@@ -19,7 +19,7 @@
 <sly data-sly-use.headerModel="com.signupform.core.models.Header" />
 <div class="main">
      <div>
-          <img src="${properties.logo @ context='uri'}" alt="&lt;&lt;" class="logo" />
+          <img src="${properties.logo @ context='uri'}" alt="&lt;&lt;" />
      </div>
      <div class="links">
           <a class="title" href="${properties.aboutuspath}">${properties.aboutus @ context='html'}</a>
@@ -30,9 +30,5 @@
                <img src="${properties.cart @ context='uri'}" alt="&lt;&lt;" class="icon" />
           </a>
           <img src="${properties.search @ context='uri'}" alt="&lt;&lt;" class="icon" />
-     </div>
-     <div class="mobilelinks">
-          <img src="${properties.search @ context='uri'}" alt="&lt;&lt;" class="icon" />
-          <img src="${properties.hamburger @ context='uri'}" alt="&lt;&lt;" class="icon" />
      </div>
 </div>
