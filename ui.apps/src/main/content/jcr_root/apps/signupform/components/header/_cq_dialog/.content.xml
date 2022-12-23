@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ |  ***********************************************************************
+ |  Cassiano Simas CONFIDENTIAL
+ |  ___________________
+ |
+ |  Copyright 2022 Cassiano Simas
+ |  All Rights Reserved.
+ |
+ |  NOTICE:  All information contained herein is, and remains the property
+ |  of Cassiano Simas and its suppliers, if any. The intellectual and
+ |  technical concepts contained herein are proprietary to Cassiano Simas
+ |  and its suppliers and are protected by trade secret or copyright law.
+ |  Dissemination of this information or reproduction of this material
+ |  is strictly forbidden unless prior written permission is obtained
+ |  from Cassiano Simas.
+ |  ***********************************************************************
+-->
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Header"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+   <content jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+      <layout jcr:primaryType="nt:unstructured"
+              margin="{Boolean}false"
+              sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+      <items jcr:primaryType="nt:unstructured">
+         <column jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+               <logo cq-msm-lockable="./logo"
+                     fieldLabel="Logo"
+                     jcr:primaryType="nt:unstructured"
+                     name="./logo"
+                     sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+               <aboutus cq-msm-lockable="./aboutus"
+                        fieldDescription="Insert label"
+                        fieldLabel="About Us"
+                        jcr:primaryType="nt:unstructured"
+                        name="./aboutus"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <aboutuspath cq-msm-lockable="./aboutuspath"
+                            fieldDescription="Path to the about us page"
+                            fieldLabel="Path"
+                            jcr:primaryType="nt:unstructured"
+                            name="./aboutuspath"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+               <products cq-msm-lockable="./products"
+                         fieldDescription="Insert label"
+                         fieldLabel="Products and Services"
+                         jcr:primaryType="nt:unstructured"
+                         name="./products"
+                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <productspath cq-msm-lockable="./productspath"
+                             fieldDescription="Path to the products page"
+                             fieldLabel="Path"
+                             jcr:primaryType="nt:unstructured"
+                             name="./productspath"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+               <store cq-msm-lockable="./store"
+                      fieldDescription="Insert label"
+                      fieldLabel="Store"
+                      jcr:primaryType="nt:unstructured"
+                      name="./store"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <storepath cq-msm-lockable="./storepath"
+                          fieldDescription="Path to the store page"
+                          fieldLabel="Path"
+                          jcr:primaryType="nt:unstructured"
+                          name="./storepath"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+               <help cq-msm-lockable="./help"
+                     fieldDescription="Insert label"
+                     fieldLabel="Help"
+                     jcr:primaryType="nt:unstructured"
+                     name="./help"
+                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <helppath cq-msm-lockable="./helppath"
+                         fieldDescription="Path to the help page"
+                         fieldLabel="Path"
+                         jcr:primaryType="nt:unstructured"
+                         name="./helppath"
+                         sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+               <cart cq-msm-lockable="./cart"
+                     fieldLabel="Cart"
+                     jcr:primaryType="nt:unstructured"
+                     name="./cart"
+                     sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+               <cartpath cq-msm-lockable="./cartpath"
+                         fieldDescription="Path to the cart page"
+                         fieldLabel="Cart Path"
+                         jcr:primaryType="nt:unstructured"
+                         name="./cartpath"
+                         sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+               <search cq-msm-lockable="./search"
+                       fieldLabel="search"
+                       jcr:primaryType="nt:unstructured"
+                       name="./search"
+                       sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+               <hamburger cq-msm-lockable="./hamburger"
+                          fieldLabel="Hamburger Icon"
+                          jcr:primaryType="nt:unstructured"
+                          name="./hamburger"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+            </items>
+         </column>
+      </items>
+   </content>
+</jcr:root>
