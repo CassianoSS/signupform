@@ -56,4 +56,6 @@ public interface Header
 
     String getSearch();
 
+    String getHamburger();
+
 }

@@ -64,6 +64,8 @@ public class HeaderImpl
     private String cartpath;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String search;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String hamburger;
     @SlingObject
     private Resource resource;
 
@@ -125,6 +127,11 @@ public class HeaderImpl
     @Override
     public String getSearch() {
         return search;
+    }
+
+    @Override
+    public String getHamburger() {
+        return hamburger;
     }
 
     @Override
