@@ -5,11 +5,11 @@
     justify-content: space-around;
     align-items: flex-end;
     margin-top: 2rem;
+
     @media all and (max-width: 390px) {
         align-items: center;
-        
     }
-    
+
 }
 
 .links {

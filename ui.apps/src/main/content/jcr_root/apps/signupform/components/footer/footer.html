@@ -17,6 +17,12 @@
 */-->
 
 <sly data-sly-use.footerModel="com.signupform.core.models.Footer" />
-<div class="footer">
-     <button class="button"><a class="text" href="">${properties.button}</a></button>
-</div>
+<footer class="footer">
+     <div>
+          <button class="button">
+               <a class="text" href="${properties.buttonpath}">
+                    ${properties.button}
+               </a>
+          </button>
+     </div>
+</footer>
