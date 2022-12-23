@@ -1,0 +1,32 @@
+.main {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 2rem;
+}
+
+.links {
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+    padding-right: 1rem;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    padding-right: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
