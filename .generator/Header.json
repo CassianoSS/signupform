@@ -1,0 +1,120 @@
+{
+    "project-settings": {
+        "code-owner": "Cassiano Simas",
+        "bundle-path": "../core/src/main/java",
+        "test-path": "../core/src/test/java",
+        "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+        "component-path": "signupform",
+        "model-interface-pkg": "com.signupform.core.models",
+        "model-impl-pkg": "com.signupform.core.models.impl"
+    },
+    "name": "header",
+    "title": "Header",
+    "group": "SignUp Form - Content",
+    "type": "components",
+    "options": {
+        "js": false,
+        "jstxt": false,
+        "css": false,
+        "csstxt": false,
+        "html": false,
+        "html-content": false,
+        "slingmodel": true,
+        "testclass": false,
+        "junit-major-version": 5,
+        "content-exporter": true,
+        "model-adaptables": [
+            "request"
+        ],
+        "generic-javadoc": false,
+        "properties": [
+            {
+                "field": "logo",
+                "type": "pathfield",
+                "label": "Logo",
+                "json-expose": true
+            },
+            {
+                "field": "aboutus",
+                "type": "textfield",
+                "label": "About Us",
+                "description": "Insert label",
+                "json-expose": true
+            },
+            {
+                "field": "aboutuspath",
+                "type": "pathfield",
+                "label": "Path",
+                "description": "Path to the about us page",
+                "json-expose": true
+            },
+            {
+                "field": "products",
+                "type": "textfield",
+                "label": "Products and Services",
+                "description": "Insert label",
+                "json-expose": true
+            },
+            {
+                "field": "productspath",
+                "type": "pathfield",
+                "label": "Path",
+                "description": "Path to the products page",
+                "json-expose": true
+            },
+            {
+                "field": "store",
+                "type": "textfield",
+                "label": "Store",
+                "description": "Insert label",
+                "json-expose": true
+            },
+            {
+                "field": "storepath",
+                "type": "pathfield",
+                "label": "Path",
+                "description": "Path to the store page",
+                "json-expose": true
+            },
+            {
+                "field": "help",
+                "type": "textfield",
+                "label": "Help",
+                "description": "Insert label",
+                "json-expose": true
+            },
+            {
+                "field": "helppath",
+                "type": "pathfield",
+                "label": "Path",
+                "description": "Path to the help page",
+                "json-expose": true
+            },
+            {
+                "field": "cart",
+                "type": "pathfield",
+                "label": "Cart",
+                "json-expose": true
+            },
+            {
+                "field": "cartpath",
+                "type": "pathfield",
+                "description": "Path to the cart page",
+                "label": "Cart Path",
+                "json-expose": true
+            },
+            {
+                "field": "search",
+                "type": "pathfield",
+                "label": "search",
+                "json-expose": true
+            },
+            {
+                "field": "hamburger",
+                "type": "pathfield",
+                "label": "Hamburger Icon",
+                "json-expose": true
+            }
+        ]
+    }
+}
