@@ -23,35 +23,17 @@ import org.osgi.annotation.versioning.ConsumerType;
 
 
 /**
- * Defines the {@code Header} Sling Model used for the {@code signupform/components/header} component.
+ * Defines the {@code Grdientbar} Sling Model used for the {@code signupform/components/grdientbar} component.
  * 
  */
 @ConsumerType
-public interface Header
+public interface Grdientbar
     extends ComponentExporter
 {
 
 
-    com.adobe.cq.wcm.core.components.models.Image getLogo();
+    String getButton();
 
-    String getAboutus();
-
-    String getAboutuspath();
-
-    String getProducts();
-
-    String getProductspath();
-
-    String getStore();
-
-    String getStorepath();
-
-    String getHelp();
-
-    String getHelppath();
-
-    com.adobe.cq.wcm.core.components.models.Image getCart();
-
-    com.adobe.cq.wcm.core.components.models.Image getSearch();
+    String getButtonpath();
 
 }

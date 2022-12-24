@@ -16,10 +16,12 @@
 *  ***********************************************************************
 */-->
 
-<sly data-sly-use.headerModel="com.signupform.core.models.Header"
-     data-sly-test.configured="${false}">
-    <!-- Component HTML goes here -->
-</sly>
-
-<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
-     data-sly-call="${templates.placeholder @ isEmpty = !configured}" />
+<sly data-sly-use.grdientbarModel="com.signupform.core.models.Grdientbar" />
+<div class="bar">
+    <a href="${properties.buttonpath}" class="textbox">
+        <div class="link">
+            <img src="/content/dam/signupform/back.png" alt="&lt;&lt;" class="icon" />
+            <p class="linktext">${properties.button}</p>
+        </div>
+    </a>
+</div>

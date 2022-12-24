@@ -1,0 +1,36 @@
+.bar {
+    background: linear-gradient(91.82deg, #35363E 27.66%, #D52B1E 86.25%);
+    height: 120px;
+    display: flex;
+    margin: 0rem -16px;
+    padding: 0rem 8.5rem;
+
+    @media all and (max-width: 390px) {
+        width: auto;
+    }
+}
+
+.textbox {
+    display: flex;
+    align-items: flex-end;
+    @media all and (max-width: 390px) {
+        width: max-content;
+    }
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+}
+
+.linktext {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+}
