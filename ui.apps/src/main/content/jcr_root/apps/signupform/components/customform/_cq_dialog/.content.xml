@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ |  ***********************************************************************
+ |  Cassiano Simas CONFIDENTIAL
+ |  ___________________
+ |
+ |  Copyright 2022 Cassiano Simas
+ |  All Rights Reserved.
+ |
+ |  NOTICE:  All information contained herein is, and remains the property
+ |  of Cassiano Simas and its suppliers, if any. The intellectual and
+ |  technical concepts contained herein are proprietary to Cassiano Simas
+ |  and its suppliers and are protected by trade secret or copyright law.
+ |  Dissemination of this information or reproduction of this material
+ |  is strictly forbidden unless prior written permission is obtained
+ |  from Cassiano Simas.
+ |  ***********************************************************************
+-->
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Custom Form"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+   <content jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+      <layout jcr:primaryType="nt:unstructured"
+              margin="{Boolean}false"
+              sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+      <items jcr:primaryType="nt:unstructured">
+         <column jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+               <title cq-msm-lockable="./title"
+                      fieldDescription="Insert title"
+                      fieldLabel="Title"
+                      jcr:primaryType="nt:unstructured"
+                      name="./title"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <subtitle cq-msm-lockable="./subtitle"
+                         fieldDescription="Insert Subtitle"
+                         fieldLabel="Subtitle"
+                         jcr:primaryType="nt:unstructured"
+                         name="./subtitle"
+                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <sectionone cq-msm-lockable="./sectionone"
+                           fieldDescription="Insert Section one title"
+                           fieldLabel="Section One"
+                           jcr:primaryType="nt:unstructured"
+                           name="./sectionone"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <fieldlabelones1 cq-msm-lockable="./fieldlabelones1"
+                                fieldDescription="Insert Section one label"
+                                fieldLabel="Section One label "
+                                jcr:primaryType="nt:unstructured"
+                                name="./fieldlabelones1"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <placeholderlabelones1 cq-msm-lockable="./placeholderlabelones1"
+                                      fieldDescription="Insert Section one placeholder text"
+                                      fieldLabel="Section One placeholder"
+                                      jcr:primaryType="nt:unstructured"
+                                      name="./placeholderlabelones1"
+                                      sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <sectiontwo cq-msm-lockable="./sectiontwo"
+                           fieldDescription="Insert Section two title"
+                           fieldLabel="Section Two Title"
+                           jcr:primaryType="nt:unstructured"
+                           name="./sectiontwo"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <sectiontwolabelone cq-msm-lockable="./sectiontwolabelone"
+                                   fieldDescription="Insert Section label one"
+                                   fieldLabel="Section Two label one"
+                                   jcr:primaryType="nt:unstructured"
+                                   name="./sectiontwolabelone"
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <sectiontwoplaceholderone cq-msm-lockable="./sectiontwoplaceholderone"
+                                         fieldDescription="Insert Section placeholder one"
+                                         fieldLabel="Section Two placeholder one"
+                                         jcr:primaryType="nt:unstructured"
+                                         name="./sectiontwoplaceholderone"
+                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <sectiontwolabeltwo cq-msm-lockable="./sectiontwolabeltwo"
+                                   fieldDescription="Insert Section label two"
+                                   fieldLabel="Section Two label two"
+                                   jcr:primaryType="nt:unstructured"
+                                   name="./sectiontwolabeltwo"
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <sectiontwoplaceholdertwo cq-msm-lockable="./sectiontwoplaceholdertwo"
+                                         fieldDescription="Insert Section placeholder two"
+                                         fieldLabel="Section Two placeholder two"
+                                         jcr:primaryType="nt:unstructured"
+                                         name="./sectiontwoplaceholdertwo"
+                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <sectiontwolabelthree cq-msm-lockable="./sectiontwolabelthree"
+                                     fieldDescription="Insert Section label three"
+                                     fieldLabel="Section Two label three"
+                                     jcr:primaryType="nt:unstructured"
+                                     name="./sectiontwolabelthree"
+                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <sectiontwoplaceholderthree cq-msm-lockable="./sectiontwoplaceholderthree"
+                                           fieldDescription="Insert Section placeholder three"
+                                           fieldLabel="Section Two placeholder three"
+                                           jcr:primaryType="nt:unstructured"
+                                           name="./sectiontwoplaceholderthree"
+                                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <sectionthreetitle cq-msm-lockable="./sectionthreetitle"
+                                  fieldDescription="Insert Section Three title"
+                                  fieldLabel="Section Three title"
+                                  jcr:primaryType="nt:unstructured"
+                                  name="./sectionthreetitle"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <sectionthreesubtitle cq-msm-lockable="./sectionthreesubtitle"
+                                     fieldDescription="Insert Section Three subtitle"
+                                     fieldLabel="Section Three subtitle"
+                                     jcr:primaryType="nt:unstructured"
+                                     name="./sectionthreesubtitle"
+                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <sectionthreelabelone cq-msm-lockable="./sectionthreelabelone"
+                                     fieldDescription="Insert Section Three label one"
+                                     fieldLabel="Section Three label one"
+                                     jcr:primaryType="nt:unstructured"
+                                     name="./sectionthreelabelone"
+                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <sectionthreeplaceholderone cq-msm-lockable="./sectionthreeplaceholderone"
+                                           fieldDescription="Insert Section Three placeholder one"
+                                           fieldLabel="Section Three placeholder one"
+                                           jcr:primaryType="nt:unstructured"
+                                           name="./sectionthreeplaceholderone"
+                                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <sectionthreelabeltwo cq-msm-lockable="./sectionthreelabeltwo"
+                                     fieldDescription="Insert Section Three label two"
+                                     fieldLabel="Section Three label two"
+                                     jcr:primaryType="nt:unstructured"
+                                     name="./sectionthreelabeltwo"
+                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <sectionthreeplaceholdertwo cq-msm-lockable="./sectionthreeplaceholdertwo"
+                                           fieldDescription="Insert Section Three placeholder two"
+                                           fieldLabel="Section Three placeholder two"
+                                           jcr:primaryType="nt:unstructured"
+                                           name="./sectionthreeplaceholdertwo"
+                                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <sectionthreelabelthree cq-msm-lockable="./sectionthreelabelthree"
+                                       fieldDescription="Insert Section Three label three"
+                                       fieldLabel="Section Three label three"
+                                       jcr:primaryType="nt:unstructured"
+                                       name="./sectionthreelabelthree"
+                                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <sectionthreeplaceholderthree cq-msm-lockable="./sectionthreeplaceholderthree"
+                                             fieldDescription="Insert Section Three placeholder three"
+                                             fieldLabel="Section Three placeholder three"
+                                             jcr:primaryType="nt:unstructured"
+                                             name="./sectionthreeplaceholderthree"
+                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <buttontext cq-msm-lockable="./buttontext"
+                           fieldDescription="Text on submit button"
+                           fieldLabel="Button text"
+                           jcr:primaryType="nt:unstructured"
+                           name="./buttontext"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <submitlink cq-msm-lockable="./submitlink"
+                           fieldDescription="Path to the submit link"
+                           fieldLabel="Path to submit"
+                           jcr:primaryType="nt:unstructured"
+                           name="./submitlink"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+            </items>
+         </column>
+      </items>
+   </content>
+</jcr:root>

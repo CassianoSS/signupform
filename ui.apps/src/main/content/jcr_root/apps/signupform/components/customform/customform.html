@@ -1,0 +1,51 @@
+<!--/*
+*  ***********************************************************************
+*  Cassiano Simas CONFIDENTIAL
+*  ___________________
+*
+*  Copyright 2022 Cassiano Simas
+*  All Rights Reserved.
+*
+*  NOTICE:  All information contained herein is, and remains the property
+*  of Cassiano Simas and its suppliers, if any. The intellectual and
+*  technical concepts contained herein are proprietary to Cassiano Simas
+*  and its suppliers and are protected by trade secret or copyright law.
+*  Dissemination of this information or reproduction of this material
+*  is strictly forbidden unless prior written permission is obtained
+*  from Cassiano Simas.
+*  ***********************************************************************
+*/-->
+
+<sly data-sly-use.customformModel="com.signupform.core.models.Customform" />
+<form>
+     <div>
+          <p class="maintitle">${properties.title}</p>
+          <p class="subtitle">${properties.subtitle}</p>
+          <div>
+               <p class="sectiontitle">${properties.sectionone}</p>
+               <p class="label">${properties.fieldlabelones1}</p>
+               <input placeholder="${properties.placeholderlabelones1}" />
+          </div>
+     </div>
+     <div>
+          <p class="sectiontitle">${properties.sectiontwo}</p>
+          <p class="label">${properties.sectiontwolabelone}</p>
+          <input placeholder="${properties.sectiontwoplaceholderone}" />
+          <p class="label">${properties.sectiontwolabeltwo}</p>
+          <input placeholder="${properties.sectiontwoplaceholdertwo}" />
+          <p class="label">${properties.sectiontwolabelthree}</p>
+          <input placeholder="${properties.sectiontwoplaceholderthree}" />
+     </div>
+     <div>
+          <p class="maintitle">${properties.sectionthreetitle}</p>
+          <p class="subtitle">${properties.sectionthreesubtitle}</p>
+          <div>
+               <p class="label">${properties.sectionthreelabelone}</p>
+               <input placeholder="${properties.sectionthreeplaceholderone}" />
+               <p class="label">${properties.sectionthreelabeltwo}</p>
+               <input placeholder="${properties.sectionthreeplaceholdertwo}">
+               <p class="label">${properties.sectionthreelabelthree}</p>
+               <input placeholder="${properties.sectionthreeplaceholderthree}">
+          </div>
+     </div>
+</form>

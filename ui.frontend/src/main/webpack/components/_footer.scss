@@ -1,7 +1,7 @@
 .footer {
     background: #FFFFFF;
     box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.05);
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: inherit;
     display: flex;
@@ -35,4 +35,9 @@
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
+}
+
+form{
+    margin-left: 160px;
+    margin-bottom: 64px;
 }

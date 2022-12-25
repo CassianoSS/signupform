@@ -1,0 +1,42 @@
+<!--/*
+*  ***********************************************************************
+*  Cassiano Simas CONFIDENTIAL
+*  ___________________
+*
+*  Copyright 2022 Cassiano Simas
+*  All Rights Reserved.
+*
+*  NOTICE:  All information contained herein is, and remains the property
+*  of Cassiano Simas and its suppliers, if any. The intellectual and
+*  technical concepts contained herein are proprietary to Cassiano Simas
+*  and its suppliers and are protected by trade secret or copyright law.
+*  Dissemination of this information or reproduction of this material
+*  is strictly forbidden unless prior written permission is obtained
+*  from Cassiano Simas.
+*  ***********************************************************************
+*/-->
+
+<sly data-sly-use.customformModel="com.signupform.core.models.Customform" />
+<form>
+     <p>${properties.title}</p>
+     <p>${properties.subtitle}</p>
+     <p>${properties.sectionone}</p>
+     <p>${properties.fieldlabelones1}</p>
+     <p>${properties.placeholderlabelones1}</p>
+     <p>${properties.sectiontwo}</p>
+     <p>${properties.sectiontwolabelone}</p>
+     <p>${properties.sectiontwoplaceholderone}</p>
+     <p>${properties.sectiontwolabeltwo}</p>
+     <p>${properties.sectiontwoplaceholdertwo}</p>
+     <p>${properties.sectiontwolabelthree}</p>
+     <p>${properties.sectiontwoplaceholderthree}</p>
+     <p>${properties.sectionthreetitle}</p>
+     <p>${properties.sectionthreesubtitle}</p>
+     <p>${properties.sectionthreelabelone}</p>
+     <p>${properties.sectionthreeplaceholderone}</p>
+     <p>${properties.sectionthreelabeltwo}</p>
+     <p>${properties.sectionthreeplaceholdertwo}</p>
+     <p>${properties.sectionthreelabelthree}</p>
+     <p>${properties.sectionthreeplaceholderthree}</p>
+<button type="submit">${properties.submitlink}</button>
+</form>
