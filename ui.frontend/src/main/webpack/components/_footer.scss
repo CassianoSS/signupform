@@ -7,7 +7,6 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-
     @media all and (max-width: 390px) {
         justify-content: center;
     }
@@ -21,14 +20,12 @@
     padding: 13px 40px 14px;
     display: flex;
     margin: 26px 161px;
-
     @media all and (max-width: 390px) {
         display: flex;
         width: 341px;
         margin: 2rem 2.5rem;
         justify-content: center;
     }
-
 }
 
 .text {
@@ -37,7 +34,3 @@
     color: #FFFFFF;
 }
 
-form{
-    margin-left: 160px;
-    margin-bottom: 64px;
-}

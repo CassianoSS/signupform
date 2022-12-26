@@ -1,21 +1,21 @@
 .maintitle {
     font-weight: 700;
     font-size: 32px;
-    line-height: 32px;
+    // line-height: 32px;
     color: #000000;
 }
 
 .subtitle {
     font-weight: 400;
     font-size: 20px;
-    line-height: 23px;
+    // line-height: 23px;
     color: #000000;
 }
 
 .sectiontitle {
     font-weight: 400;
     font-size: 20px;
-    line-height: 23px;
+    // line-height: 23px;
 
     color: #000000;
 }
@@ -23,11 +23,70 @@
 .label {
     font-weight: 400;
     font-size: 16px;
-    line-height: 18px;
+    // line-height: 18px;
     color: #404149;
 }
 
-input{
-    background: #EFEFF1;
-    height: 48px;
+.top {
+    margin-top: 3rem;
+    input {
+        width: 740px;
+        @media all and (max-width: 390px) {
+            width: 342px;
+        }
+    }
 }
+
+.bottom {
+    display: inline-flex;
+    @media all and (max-width: 390px) {
+        display: flex;
+        flex-direction: column;
+    }
+    div {
+        margin-right: 20px;
+        input {
+            width: 360px;
+            @media all and (max-width: 390px) {
+                width: 342px;
+            }
+        }
+    }
+}
+
+.sectioncontainer {
+    margin-top: 4rem;
+}
+
+.gridcontainer {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 362px auto;
+    column-gap: 20px;
+    @media all and (max-width: 390px) {
+        display: flex;
+        flex-direction: column;
+    }
+    input {
+        width: 360px;
+        @media all and (max-width: 390px) {
+            width: 342px;
+        }
+    }
+}
+
+input {
+    background: #efeff1;
+    height: 48px;
+    border: none;
+}
+
+form {
+    margin-left: 160px;
+    margin-bottom: 4rem;
+    @media all and (max-width: 390px) {
+        margin-bottom: 4rem;
+        margin-left: 0px;
+    }
+}
+
