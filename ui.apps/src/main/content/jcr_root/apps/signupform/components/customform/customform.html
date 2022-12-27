@@ -1,0 +1,74 @@
+<!--/*
+*  ***********************************************************************
+*  Cassiano Simas CONFIDENTIAL
+*  ___________________
+*
+*  Copyright 2022 Cassiano Simas
+*  All Rights Reserved.
+*
+*  NOTICE:  All information contained herein is, and remains the property
+*  of Cassiano Simas and its suppliers, if any. The intellectual and
+*  technical concepts contained herein are proprietary to Cassiano Simas
+*  and its suppliers and are protected by trade secret or copyright law.
+*  Dissemination of this information or reproduction of this material
+*  is strictly forbidden unless prior written permission is obtained
+*  from Cassiano Simas.
+*  ***********************************************************************
+*/-->
+
+<sly data-sly-use.customformModel="com.signupform.core.models.Customform" />
+
+<form id="customform">
+     <div>
+          <div>
+               <p class="maintitle">${properties.title}</p>
+               <p class="subtitle">${properties.subtitle}</p>
+          </div>
+          <div class="top">
+               <p class="sectiontitle">${properties.sectionone}</p>
+               <p class="label">${properties.fieldlabelones1}</p>
+               <input placeholder="${properties.placeholderlabelones1}" />
+          </div>
+     </div>
+     <div class="sectioncontainer">
+          <p class="sectiontitle">${properties.sectiontwo}</p>
+          <div class="gridcontainer">
+               <div class="dropdown">
+                    <label for="documento" class="label">${properties.sectiontwolabelone}</label>
+                    <!-- <input placeholder="${properties.sectiontwoplaceholderone}" /> -->
+                    <select name="documento" id="documento">
+                         <option value="${properties.sectiontwoplaceholderone}">${properties.sectiontwoplaceholderone}
+                         </option>
+                    </select>
+               </div>
+               <div>
+                    <p class="label">${properties.sectiontwolabeltwo}</p>
+                    <input placeholder="${properties.sectiontwoplaceholdertwo}" />
+               </div>
+               <div>
+                    <p class="label" for="NIF">${properties.sectiontwolabelthree}</p>
+                    <input placeholder="${properties.sectiontwoplaceholderthree}" name="NIF" id="NIF" pattern="(\d{9})"
+                         required />
+                    <span id="notify"></span>
+               </div>
+          </div>
+     </div>
+     <div class="sectioncontainer">
+          <p class="maintitle">${properties.sectionthreetitle}</p>
+          <p class="subtitle">${properties.sectionthreesubtitle}</p>
+          <div class="bottom">
+               <div>
+                    <p class="label">${properties.sectionthreelabelone}</p>
+                    <input placeholder="${properties.sectionthreeplaceholderone}" />
+               </div>
+               <div>
+                    <p class="label">${properties.sectionthreelabeltwo}</p>
+                    <input placeholder="${properties.sectionthreeplaceholdertwo}" />
+               </div>
+               <div>
+                    <p class="label">${properties.sectionthreelabelthree}</p>
+                    <input placeholder="${properties.sectionthreeplaceholderthree}" />
+               </div>
+          </div>
+     </div>
+</form>

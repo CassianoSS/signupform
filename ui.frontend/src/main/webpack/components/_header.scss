@@ -2,10 +2,9 @@
     background-color: white;
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-end;
-    margin-top: 2rem;
-    
+    margin-top: 2rem;    
     @media all and (max-width: 390px) {
         align-items: center;
         justify-content: space-between;
@@ -16,7 +15,6 @@
 .links {
     display: inline-flex;
     align-items: center;
-
     @media all and (max-width: 390px) {
         display: none;
     }
@@ -24,7 +22,6 @@
 
 .mobilelinks {
     display: none;
-
     @media all and (max-width: 390px) {
         display: inline-flex;
         align-items: center;

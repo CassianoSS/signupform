@@ -1,0 +1,122 @@
+.maintitle {
+    font-weight: 700;
+    font-size: 32px;
+    // line-height: 32px;
+    color: #000000;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    // line-height: 23px;
+    color: #000000;
+}
+
+.sectiontitle {
+    font-weight: 400;
+    font-size: 20px;
+    // line-height: 23px;
+
+    color: #000000;
+}
+
+.label {
+    font-weight: 400;
+    font-size: 16px;
+    // line-height: 18px;
+    color: #404149;
+}
+
+.top {
+    margin-top: 3rem;
+    input {
+        width: 740px;
+        @media all and (max-width: 390px) {
+            width: 342px;
+        }
+    }
+}
+
+.bottom {
+    display: inline-flex;
+    @media all and (max-width: 390px) {
+        display: flex;
+        flex-direction: column;
+    }
+    div {
+        margin-right: 20px;
+        input {
+            width: 360px;
+            @media all and (max-width: 390px) {
+                width: 342px;
+            }
+        }
+    }
+}
+
+.sectioncontainer {
+    margin-top: 4rem;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    label {
+        margin-bottom: 18px;
+    }
+}
+
+.gridcontainer {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 362px auto;
+    column-gap: 20px;
+    @media all and (max-width: 390px) {
+        display: flex;
+        flex-direction: column;
+    }
+    input,
+    select {
+        width: 360px;
+        @media all and (max-width: 390px) {
+            width: 342px;
+        }
+    }
+}
+
+input,
+select {
+    background: #efeff1;
+    height: 48px;
+    border: none;
+}
+
+form {
+    margin-left: 160px;
+    margin-bottom: 4rem;
+    @media all and (max-width: 390px) {
+        margin-bottom: 4rem;
+        margin-left: 0px;
+    }
+}
+
+input.invalid {
+    border: 2px solid #d52b1e;
+    display: block;
+}
+
+#notify {
+    font-weight: 400;
+    font-size: 16px;
+    color: #d52b1e;
+    margin-top: 12px;
+    width: 28rem;
+    @media all and (max-width: 390px) {
+        width: auto;
+    }
+}
+#notify.error {
+    background-color: inherit;
+    color: #d52b1e;
+}

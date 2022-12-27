@@ -26,6 +26,7 @@
 .link {
     display: flex;
     align-items: center;
+    margin-left: 2rem;
     @media all and (max-width: 390px) {
         margin: 0rem -2rem;
     }
