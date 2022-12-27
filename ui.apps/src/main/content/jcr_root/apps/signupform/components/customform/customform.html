@@ -18,10 +18,12 @@
 
 <sly data-sly-use.customformModel="com.signupform.core.models.Customform" />
 
-<form id="customform" onsubmit="handlesubmit(event)">
+<form id="customform">
      <div>
-          <p class="maintitle">${properties.title}</p>
-          <p class="subtitle">${properties.subtitle}</p>
+          <div>
+               <p class="maintitle">${properties.title}</p>
+               <p class="subtitle">${properties.subtitle}</p>
+          </div>
           <div class="top">
                <p class="sectiontitle">${properties.sectionone}</p>
                <p class="label">${properties.fieldlabelones1}</p>
@@ -31,19 +33,23 @@
      <div class="sectioncontainer">
           <p class="sectiontitle">${properties.sectiontwo}</p>
           <div class="gridcontainer">
-               <div>
-                    <p class="label">${properties.sectiontwolabelone}</p>
-                    <input placeholder="${properties.sectiontwoplaceholderone}" />
+               <div class="dropdown">
+                    <label for="documento" class="label">${properties.sectiontwolabelone}</label>
+                    <!-- <input placeholder="${properties.sectiontwoplaceholderone}" /> -->
+                    <select name="documento" id="documento">
+                         <option value="${properties.sectiontwoplaceholderone}">${properties.sectiontwoplaceholderone}
+                         </option>
+                    </select>
                </div>
                <div>
                     <p class="label">${properties.sectiontwolabeltwo}</p>
                     <input placeholder="${properties.sectiontwoplaceholdertwo}" />
                </div>
                <div>
-                    <p class="label">${properties.sectiontwolabelthree}</p>
-                    <input placeholder="${properties.sectiontwoplaceholderthree}" oninput="this.setCustomValidity('')"
-                         id="NIF" />
-                         <span class="errormessage"></span>
+                    <p class="label" for="NIF">${properties.sectiontwolabelthree}</p>
+                    <input placeholder="${properties.sectiontwoplaceholderthree}" name="NIF" id="NIF" pattern="(\d{9})"
+                         required />
+                    <span id="notify"></span>
                </div>
           </div>
      </div>
@@ -66,34 +72,3 @@
           </div>
      </div>
 </form>
-</div>
-<script>
-     function handlesubmit(event) {
-
-          event.preventDefault();
-          console.log("first run");
-          let input = document.forms["customform"]["NIF"];
-          let nif = input.value;
-          if (nif === "") {
-               return input.setCustomValidity(
-                    "Campo vazio. Por favor introduza um NIF válido com 9 dígitos."
-               );
-               // event.preventDefault();
-          } else if (isNaN(nif)) {
-               return input.setCustomValidity("Por favor insira seu NIF.");
-               // event.preventDefault();
-          } else if (nif.length < 9) {
-               return input.setCustomValidity(
-                    "NIF inválido. Por favor introduza um NIF válido com 9 dígitos."
-               );
-               console.log(
-                    "NIF inválido. Por favor introduza um NIF válido com 9 dígitos."
-               );
-               // event.preventDefault();
-          }
-          console.log("form is submitted");
-          console.log(nif);
-          console.log(Number(nif));
-          // event.preventDefault();
-     }
-</script>

@@ -1,14 +1,17 @@
 .footer {
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.05);
     position: sticky;
     bottom: 0;
-    width: inherit;
+    width: 1440px !important;
+    height: 96px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
     @media all and (max-width: 390px) {
         justify-content: center;
+        width: 390px !important;
+        margin: 0rem -1rem;
     }
 }
 
@@ -16,21 +19,28 @@
     width: 159px;
     height: 48px;
     bottom: 24px;
-    background: #1E1F27;
+    background: #1e1f27;
     padding: 13px 40px 14px;
     display: flex;
     margin: 26px 161px;
     @media all and (max-width: 390px) {
         display: flex;
-        width: 341px;
+        width: 341px !important;
         margin: 2rem 2.5rem;
         justify-content: center;
     }
 }
 
+.left {
+    background-color: inherit;
+    height: inherit;
+    left: 0;
+    position: absolute;
+    margin: 0rem -1rem;
+}
+
 .text {
     font-size: 18px;
     line-height: 21px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
-
